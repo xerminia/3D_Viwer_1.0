@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>kek v3.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>9471ca8d83f7c7ec.gif</normaloff>9471ca8d83f7c7ec.gif</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>281</width>
+     <height>901</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #404040;
+ border-color: #BEBEBE;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_open">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Открыть файл</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>254</width>
+      <height>268</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QComboBox" name="comboBox_line_type">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Прямая</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Пунктирная</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_fon_color">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string> (default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Белый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Красный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Оранжевый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Желтый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зеленый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Голубой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Синий</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Фиолетовый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Черный</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QComboBox" name="comboBox_dot_type">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Отсутствует</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Круг</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Квадрат</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_proection_type">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Паралельная</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Центральная</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QComboBox" name="comboBox_dot_size">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_dot_color">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Цвет линий</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Красный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Оранжевый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Желтый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зеленый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Голубой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Синий</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Фиолетовый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Белый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Черный</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Размер вершин</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Цвет точек</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Размер линии</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Цвет линий</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QComboBox" name="comboBox_line_size">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_line_color">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:4px;
+}
+QComboBox:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(44, 116, 80);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:4px;
+}
+</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>(default)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Черный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Красный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Оранжевый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Желтый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зеленый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Голубой</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Синий</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Фиолетовый</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Белый</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Тип вершин</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Вид проекции</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Линия</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: &quot;white&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Цвет фона</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>241</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>221</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_name_file_2">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Имя файла:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_vertex_2">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Кол-во вершин:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_faces_2">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Кол-во ребер:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_name_file">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_vertex">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_faces">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+color: rgb(255, 255, 255);
+background-color: #404040;
+ border-color: #BEBEBE;
+ border-width:0px;
+ border-radius:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_grad">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>670</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: &quot;white&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mashtab_minus">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>720</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Применить масштаб</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton_sdvig">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>СДВИГ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_povorot">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>ПОВОРОТ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>240</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_x">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_y">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_z">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Сброс настроек</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_settings">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Применить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>760</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>СБРОС</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>800</y>
+      <width>216</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_12">
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Save Image</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+background-color: #828282;
+border-color: #BEBEBE;
+ border-style: solid;
+ border-width:1px;
+ border-radius:10px;
+}
+QPushButton:hover {
+color: rgb(230, 230, 230);
+background-color: #606060;
+border-color: #BEBEBE;
+border-style: solid;
+border-width:1px;
+border-radius:10px;
+}
+QPushButton:pressed {
+    color: rgb(144, 143, 146);
+background-color: rgb(16, 94, 46);
+border-color: rgb(144, 143, 146);
+ border-style: solid;
+ border-width:2px;
+ border-radius:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Save Gif</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>860</y>
+     <width>1021</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #404040;
+ border-color: #BEBEBE;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #404040;
+ border-color: #BEBEBE;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
